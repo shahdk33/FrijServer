@@ -1,6 +1,10 @@
 from flask import Flask, request, jsonify
 import requests
 
+from flask_cors import CORS
+
+CORS(app)
+
 app = Flask(__name__)
 
 def get_recipes(ingredients):
