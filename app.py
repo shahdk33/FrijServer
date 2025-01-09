@@ -3,9 +3,10 @@ import requests
 
 from flask_cors import CORS
 
-CORS(app)
+
 
 app = Flask(__name__)
+CORS(app)
 
 def get_recipes(ingredients):
     query = ','.join(ingredients)
