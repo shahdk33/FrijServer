@@ -6,7 +6,7 @@ from flask_cors import CORS
 
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://frij.netlify.app/"])
 
 def get_recipes(ingredients):
     query = ','.join(ingredients)
