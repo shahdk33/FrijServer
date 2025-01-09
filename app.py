@@ -18,6 +18,9 @@ def get_recipe_details(recipe_id):
     else:
         return {"error": f"Failed to fetch details for recipe {recipe_id}"}
 
+@app.route("/")
+def home():
+    return "Welcome to the Recipe Finder API! Use the /recipes endpoint to fetch recipes."
 
 @app.route('/recipes', methods=['POST'])
 def recipes():
