@@ -3,6 +3,7 @@ import logo from '../assets/frij.png'
 import { Link } from 'react-router-dom';
 import AboutImage from '../assets/AboutImage.png'
 import NavBar from './NavBar';
+import Footer from './Footer';
 function AboutUs() {
     return (
         
@@ -43,22 +44,8 @@ function AboutUs() {
                 </div>
             </div>
 
+            <Footer />
 
-                        <footer className="footer">
-                            <div className="footer-left">
-                            <h2>frij</h2>
-                            <p>© 2024</p>
-                            <p>Shahd Khartabil</p>
-                            </div>
-                            
-                            <div className="footer-right">
-                                <div className="footer-nav">
-                                    <Link to="/">Find recipes</Link>
-                                    <Link to="/how-it-works">How it works</Link>
-                                    <Link to="/about-us">About us</Link>
-                                </div>
-                            </div>
-                        </footer>
         </div>
     );
 }

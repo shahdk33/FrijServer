@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import HowItWorksImage from '../assets/HowItWorksImage.png';
 import NavBar
  from './NavBar';
+import Footer from './Footer';
 function HowItWorks() {
     return (
         <div>
@@ -19,9 +20,9 @@ function HowItWorks() {
                             frij is powered by a Python backend server that does all the heavy lifting to make finding recipes quick and easy. Here's how it works:
                         </p>
                         <ol className="how-it-works-list">
-                            <li><b>Enter Ingredients:</b> Simply type in the ingredients you have on hand—like "chicken, rice, and tomatoes"—in the search bar.</li>
-                            <li><b>Backend Magic:</b> Once you hit the "Let's Go" button, the Python backend server takes your input and communicates with the <b>Spoonacular API</b>, a comprehensive database of recipes.</li>
-                            <li><b>Smart Matching:</b> The server analyzes your ingredients and fetches recipes that match what you already have, along with details like preparation time and any additional ingredients you might need.</li>
+                            <li><b>Enter Ingredients:</b> Simply type in the ingredients you have on hand in the search bar.</li>
+                            <li><b>Backend Magic:</b> The Python backend server takes your input and communicates with the <b>Spoonacular API</b></li>
+                            <li><b>Smart Matching:</b> The server analyzes your ingredients and fetches recipes that match what you already have along with other details</li>
                             <li><b>Results in Seconds:</b> Within moments, you'll see tailored recipes, ready for you to explore and cook.</li>
                         </ol>
                         <p className="description">
@@ -35,22 +36,7 @@ function HowItWorks() {
                 </div>
             </div>
 
-            {/* Footer */}
-            <footer className="footer">
-                <div className="footer-left">
-                    <h2>frij</h2>
-                    <p>© 2024</p>
-                    <p>Shahd Khartabil</p>
-                </div>
-
-                <div className="footer-right">
-                    <div className="footer-nav">
-                        <Link to="/">Find recipes</Link>
-                        <Link to="/how-it-works">How it works</Link>
-                        <Link to="/about-us">About us</Link>
-                    </div>
-                </div>
-            </footer>
+           {/* <Footer /> */}
         </div>
     );
 }
