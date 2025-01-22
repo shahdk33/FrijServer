@@ -70,7 +70,7 @@ function RecipeApp() {
                 </div>
 
                 <div className="right-side">
-                    <img src={foodImage} className="mage" alt="Food" />
+                    <img src={foodImage} className="image" alt="Food" />
                 </div>
             </div>
 

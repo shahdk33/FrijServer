@@ -31,7 +31,7 @@ function HowItWorks() {
                 </div>
 
                 <div className="right-side">
-                    <img src={HowItWorksImage} className="mage" alt="How It Works" />
+                    <img src={HowItWorksImage} className="image" alt="How It Works" />
                 </div>
             </div>
 

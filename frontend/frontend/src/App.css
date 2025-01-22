@@ -73,7 +73,33 @@ body {
   height: auto;
   object-fit: cover; /* Ensures the image covers the space without distortion */
 }
+@media (max-width: 768px) {
+  .AboutPage , .App, .HomePage{
+    flex-direction: column; /* Stacks content vertically */
+    text-align: center; /* Centers text for better readability */
+  }
 
+  .left-side,
+  .right-side {
+    flex: none; /* Removes flexible sizing */
+
+  }
+
+  .right-side{
+    justify-content: right;
+  }
+
+  .description {
+    font-size: 1rem; /* Adjusts text size for better readability */
+  }
+
+  .image {
+    margin-top: 10px; /* Adds spacing between the image and text */
+    width: 80%; /* Make the image smaller on mobile */
+    max-width: 400px; /* Limit the maximum size */
+  
+  }
+}
 
 .navbar {
   display: flex;
