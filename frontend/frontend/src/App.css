@@ -76,12 +76,15 @@ body {
 
 
 .navbar {
-  background-color: #ffffff;
-  color: rgb(28, 20, 95);
-  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #ffffff;
+  color: rgb(28, 20, 95);
+  padding: 1rem 2rem;
+}
+.navbar-logo img {
+  height: 50px;
 }
 
 h1 > b{
@@ -89,19 +92,59 @@ h1 > b{
   font-family: 'Lilita One';
 }
 
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Navbar links */
 .navbar-links a {
-  color: rgb(0, 0, 0);;
-  margin: 0 1rem;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-weight: bold;
 }
 
-.navbar-logo img{
-  height: 50px;
-}
 
 .navbar-links a:hover {
   color: #0097b2;
+}
+/* Hamburger menu styling */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 3px 0;
+}
+
+/* Mobile view adjustments for nav*/
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    gap: 1;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #ffffff;
+    border: 1px solid #133e87;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 150px;
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }
 
 .header {

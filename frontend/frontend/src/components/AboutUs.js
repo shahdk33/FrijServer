@@ -9,7 +9,6 @@ function AboutUs() {
         <div>
             <NavBar />
 
-
             <div className="AboutPage">
                 <div className="left-side">
                     <header className="header">
