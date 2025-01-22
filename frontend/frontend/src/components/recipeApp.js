@@ -5,7 +5,7 @@ import foodImage from '../assets/HomeImage.png'
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import { ClipLoader } from 'react-spinners';
 import { Link } from 'react-router-dom';
-
+import NavBar from './NavBar';
 //TODO: Responsive design, and footer/nav links
 
 function RecipeApp() {
@@ -36,18 +36,8 @@ function RecipeApp() {
 
     return (
         <div className="App">
-            {/* Navbar */}
-            <nav className="navbar">
-                <div className="navbar-logo">
-                    <img src={logo} alt="Logo" className="logo-img" /> {/* Logo image */}
-                </div>
-                
-                <div className="navbar-links">
-                <Link to="/">Find recipes</Link>
-                <Link to="/how-it-works">How it works</Link>
-                <Link to="/about-us">About us</Link>
-                </div>
-            </nav>
+            
+            <NavBar />
 
             {/* Header Section */}
             <div className="HomePage">

@@ -2,22 +2,13 @@ import React from 'react';
 import logo from '../assets/frij.png'
 import { Link } from 'react-router-dom';
 import AboutImage from '../assets/AboutImage.png'
-
+import NavBar from './NavBar';
 function AboutUs() {
     return (
         
         <div>
-            <nav className="navbar">
-                <div className="navbar-logo">
-                    <img src={logo} alt="Logo" className="logo-img" /> {/* Logo image */}
-                </div>
-                
-                <div className="navbar-links">
-                <Link to="/">Find recipes</Link>
-                <Link to="/how-it-works">How it works</Link>
-                <Link to="/about-us">About us</Link>
-                </div>
-            </nav>
+            <NavBar />
+
 
             <div className="AboutPage">
                 <div className="left-side">
