@@ -97,7 +97,7 @@ body {
     margin-top: 10px; /* Adds spacing between the image and text */
     width: 80%; /* Make the image smaller on mobile */
     max-width: 400px; /* Limit the maximum size */
-  
+    z-index: -10;
   }
 }
 
@@ -259,7 +259,7 @@ a{
 .recipes-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Creates 3 equal-width columns */
-  gap: 0px; /* Space between cards */
+  gap: 20px; /* Space between cards */
   padding: 20px;  
   align-items: center;
   margin-top: 2rem;
@@ -272,14 +272,15 @@ a{
   margin: 1rem;
   border-radius: 20px;
   width: 90%;
+  height: 90%;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;  /* Place content on both sides */
-  background-color: #0097b2;  /* Dark blue background */
+  background-color: #0097b2;  
   color: #F3F3E0;  /* Light text color */
-  padding: 20px;  /* Add space inside the footer */
+  padding: 20px;  
   max-width: 100%;
   bottom: 0;
 }
@@ -316,46 +317,47 @@ a{
 }
 
 .footer-nav a {
-  color: #F3F3E0;         /* Light text color for links */
-  text-decoration: none;  /* Remove underline from links */
-  font-size: 16px;        /* Make the font a bit larger */
-  margin: 5px 0;          /* Add some vertical space between links */
-  transition: color 0.3s ease;  /* Smooth color transition on hover */
+  color: #F3F3E0;         
+  text-decoration: none;  
+  font-size: 16px;        
+  margin: 5px 0;          
+  transition: color 0.3s ease; 
 }
 
 .footer-nav a:hover {
-  color: #CBDCEB;  /* Light blue color when hovered */
+  color: #CBDCEB; 
 }
 
 .loading-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px; /* Adjust height as needed */
+  height: 200px;
   width: 100%;
 }
 
-/* For the entire page */
+/* For the entire page scrollbar */
 body::-webkit-scrollbar {
-  width: 10px; /* Width of the scrollbar */
+  width: 10px;
 }
 
 body::-webkit-scrollbar-track {
-  background: #ffffff; /* Track color */
-  border-radius: 10px; /* Rounded edges for the track */
+  background: #ffffff;
+  border-radius: 10px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #bddde2; /* Scrollbar thumb color */
-  border-radius: 10px; /* Rounded edges for the thumb */
+  background: #bddde2; 
+  border-radius: 10px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background: #046071; /* Scrollbar thumb color on hover */
+  background: #046071; 
 }
 
 .recipe-card {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   background-color: #ffffff;
   border: 1px solid #e0e0e0;
@@ -434,8 +436,15 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media (max-width: 768px) {
+  /*recipe container responsive design for mobile*/
   .recipes-container {
     grid-template-columns: 1fr;
+  }
+  .recipe-card{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0;
   }
 }
 
